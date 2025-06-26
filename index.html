@@ -11,12 +11,15 @@
             background-color: #f0f0f0;
         }
         .container {
-            max-width: 500px;
+            max-width: 800px;
             margin: auto;
             padding: 20px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -42,6 +45,167 @@
                 Submit
             </button>
         </form>
+        <div id="medicine-table" style="display: none;">
+            <table class="table table-striped">
+             <thead>
+				<tr>
+				<th>Name of Ward/OPD</th>
+				<th>Location</th>
+				<th>Timings</th>
+			  </tr></thead>
+			<tbody>
+			  <tr>
+				<td>Skin, STD, Leprosy WD</td>
+				<td>B1F6</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Acute Medical  WD</td>
+				<td>B1F5</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>HDU</td>
+				<td>B1F5</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Endocrine </td>
+				<td>B1F3</td>
+				<td>tue fri</td>
+			  </tr>
+			  <tr>
+				<td>GEN MED</td>
+				<td>B1F3</td>
+				<td>daily</td>
+			  </tr>
+			  <tr>
+				<td>Geriatrics OPD</td>
+				<td>B1F3</td>
+				<td>wed sat </td>
+			  </tr>
+			  <tr>
+				<td>Skin OPD</td>
+				<td>B1F1</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Urology OPD & amp; WD</td>
+				<td>B2F3</td>
+				<td>mon wed </td>
+			  </tr>
+			  <tr>
+				<td>GE Med WD</td>
+				<td>B3F6</td>
+				<td>mon fri</td>
+			  </tr>
+			  <tr>
+				<td>family med WD</td>
+				<td>B3F4</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td> endocrine WD</td>
+				<td>B3F3</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>neurology WD</td>
+				<td>B3F3</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>haemat WD</td>
+				<td>B3F3</td>
+				<td>tue thu sat(BMT)</td>
+			  </tr>
+			  <tr>
+				<td>AIDS centre </td>
+				<td>B5F6</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Gen med</td>
+				<td>B5F3</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>nephrology WD</td>
+				<td>B5F3</td>
+				<td>tue thu(transplant) fri</td>
+			  </tr>
+			  <tr>
+				<td>rheumat WD</td>
+				<td>B5F2</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>RHEUMAT OPD </td>
+				<td>B1F2</td>
+				<td>tue fri</td>
+			  </tr>
+			  <tr>
+				<td>nephrology OPD </td>
+				<td>B6F3</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>gastro OPD</td>
+				<td>B7F3</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>haematology OPD</td>
+				<td>B7F3</td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Neurology OPD</td>
+				<td>B7F3</td>
+				<td>Tue fri</td>
+			  </tr>
+			</tbody>
+            </table>
+        </div>
+        <div id="obgy-table" style="display: none;">
+            <table class="table table-striped">
+                <thead>
+				<tr>
+				<th>Name of Ward/OPD</th>
+				<th>Location</th>
+				<th>Timings</th>
+				</tr></thead>
+                <tbody>
+                    <tr><td>Obs & amp; Gyn OPD </td><td>B2FG</td><td>tue fri sat </td></tr><tr><td>Maternity WD</td><td>B3F1</td><td></td></tr><tr><td>civil maternity WD </td><td>B3F1</td><td></td></tr><tr><td>NICU &amp; labour room</td><td>B2F1</td><td></td></tr><tr><td>art centre</td><td>B2FG</td><td>daily</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="surgery-table" style="display: none;">
+            <table class="table table-striped">
+                <thead>
+				<tr>
+				<th>Name of Ward/OPD</th>
+				<th>Location</th>
+				<th>Timings</th>
+				</tr></thead>
+                <tbody>
+                    <tr><td>PLASTIC SURG WD</td><td>B1F4</td><td></td></tr><tr><td>BURNS CENTRE</td><td>B1F4</td><td></td></tr><tr><td>GENERAL SURG OPD</td><td>B1F1</td><td>daily</td></tr><tr><td>VASCULAR SURG OPD</td><td>B1F1</td><td>mon fri</td></tr><tr><td>GENERAL SURG OPD</td><td>B1F1</td><td></td></tr><tr><td>GI surg </td><td>B3F6</td><td></td></tr><tr><td>family sug WD </td><td>B3F4</td><td></td></tr><tr><td>vascular surg WD </td><td>B4F3</td><td></td></tr><tr><td>acute surgery  WD</td><td>B7F5</td><td></td></tr><tr><td>neurosurgery WD</td><td>B7F5</td><td></td></tr><tr><td>neurosurgery OPD </td><td>B7F4</td><td>mon fri</td></tr><tr><td>plastic surgery OPD </td><td>B7F4</td><td></td></tr><tr><td>GI surg OPD </td><td>B7F3</td><td>tue thu</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="paediatrics-table" style="display: none;">
+            <table class="table table-striped">
+				<thead>
+				<tr>
+				<th>Name of Ward/OPD</th>
+				<th>Location</th>
+				<th>Timings</th>
+				</tr></thead>
+                <tbody>
+                    <tr><td>PAED MED</td><td>B1F2</td><td></td></tr><tr><td>PAED WD 1</td><td>B2F2</td><td></td></tr><tr><td>PICU</td><td>B2F2</td><td></td></tr><tr><td>NICU &amp; labour room</td><td>B2F1</td><td></td></tr><tr><td> Paed med &nbsp;&nbsp;&nbsp;WD 2 </td><td>B3F2</td><td></td></tr><tr><td>Paed surg OPD</td><td>B1F2</td><td>daily</td></tr><tr><td>Paed surg WD 2</td><td>B3F2</td><td>tue wed thu fri</td></tr><tr><td>Paed WD 3</td><td>B4F2</td><td></td></tr><tr><td>Paed onco WD </td><td>B4F2</td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -62,5 +226,30 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        const departmentSelect = document.getElementById('department');
+        const medicineTable = document.getElementById('medicine-table');
+        const obgyTable = document.getElementById('obgy-table');
+        const surgeryTable = document.getElementById('surgery-table');
+        const paediatricsTable = document.getElementById('paediatrics-table');
+
+        departmentSelect.addEventListener('change', () => {
+            const selectedDepartment = departmentSelect.value;
+            medicineTable.style.display = 'none';
+            obgyTable.style.display = 'none';
+            surgeryTable.style.display = 'none';
+            paediatricsTable.style.display = 'none';
+
+            if (selectedDepartment === 'Medicine') {
+                medicineTable.style.display = 'block';
+            } else if (selectedDepartment === 'Obgy') {
+                obgyTable.style.display = 'block';
+            } else if (selectedDepartment === 'Surgery') {
+                surgeryTable.style.display = 'block';
+            } else if (selectedDepartment === 'Paediatrics') {
+                paediatricsTable.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>

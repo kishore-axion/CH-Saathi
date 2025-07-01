@@ -8,7 +8,8 @@
     <style>
         body {
             padding: 20px;
-            background-color: #f0f0f0;
+            backdrop-filter: blur(3px);
+			background-color: #f0f0f0;
         }
         .container {
             max-width: 800px;
@@ -21,11 +22,18 @@
         table {
             margin-top: 20px;
         }
+		<!-- background-color: #f0f0f0;
+			background-image:
+			url('command-hospital-pune.jpg');		--!>
     </style>
 </head>
 <body>
     <div class="container">
         <h2 class="text-center mb-4">CH Saathi</h2>
+		<body> 
+			<!-- <h5 class="text-center mb-1"> For AFMCites by AFMCite </h5> --!>
+			<p class="text-center mb-2">For AFMCites by AFMCite <br> Still in beta ;) </p>
+		</body>
         <form>
             <div class="mb-3">
                 <label for="afgNo" class="form-label">AFG No</label>
@@ -41,9 +49,11 @@
                     <option value="Paediatrics">Paediatrics</option>
                 </select>
             </div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Submit
             </button>
+			this is a vestegial button
+			--!>
         </form>
         <div id="medicine-table" style="display: none;">
             <table class="table table-striped">
@@ -75,7 +85,7 @@
 				<td>tue fri</td>
 			  </tr>
 			  <tr>
-				<td>GEN MED</td>
+				<td>Gen MED</td>
 				<td>B1F3</td>
 				<td>daily</td>
 			  </tr>
@@ -90,7 +100,7 @@
 				<td></td>
 			  </tr>
 			  <tr>
-				<td>Urology OPD & amp; WD</td>
+				<td>Urology OPD &amp; WD</td>
 				<td>B2F3</td>
 				<td>mon wed </td>
 			  </tr>
@@ -100,22 +110,22 @@
 				<td>mon fri</td>
 			  </tr>
 			  <tr>
-				<td>family med WD</td>
+				<td>Family med WD</td>
 				<td>B3F4</td>
 				<td></td>
 			  </tr>
 			  <tr>
-				<td> endocrine WD</td>
+				<td>Endocrine WD</td>
 				<td>B3F3</td>
 				<td></td>
 			  </tr>
 			  <tr>
-				<td>neurology WD</td>
+				<td>Neurology WD</td>
 				<td>B3F3</td>
 				<td></td>
 			  </tr>
 			  <tr>
-				<td>haemat WD</td>
+				<td>Haemat WD</td>
 				<td>B3F3</td>
 				<td>tue thu sat(BMT)</td>
 			  </tr>
@@ -130,32 +140,32 @@
 				<td></td>
 			  </tr>
 			  <tr>
-				<td>nephrology WD</td>
+				<td>Nephrology WD</td>
 				<td>B5F3</td>
 				<td>tue thu(transplant) fri</td>
 			  </tr>
 			  <tr>
-				<td>rheumat WD</td>
+				<td>Rheumat WD</td>
 				<td>B5F2</td>
 				<td></td>
 			  </tr>
 			  <tr>
-				<td>RHEUMAT OPD </td>
+				<td>Rheumat OPD </td>
 				<td>B1F2</td>
 				<td>tue fri</td>
 			  </tr>
 			  <tr>
-				<td>nephrology OPD </td>
+				<td>Nephrology OPD </td>
 				<td>B6F3</td>
 				<td></td>
 			  </tr>
 			  <tr>
-				<td>gastro OPD</td>
+				<td>Gastro OPD</td>
 				<td>B7F3</td>
 				<td></td>
 			  </tr>
 			  <tr>
-				<td>haematology OPD</td>
+				<td>Haematology OPD</td>
 				<td>B7F3</td>
 				<td></td>
 			  </tr>
@@ -176,7 +186,7 @@
 				<th>Timings</th>
 				</tr></thead>
                 <tbody>
-                    <tr><td>Obs & amp; Gyn OPD </td><td>B2FG</td><td>tue fri sat </td></tr><tr><td>Maternity WD</td><td>B3F1</td><td></td></tr><tr><td>civil maternity WD </td><td>B3F1</td><td></td></tr><tr><td>NICU &amp; labour room</td><td>B2F1</td><td></td></tr><tr><td>art centre</td><td>B2FG</td><td>daily</td></tr>
+                    <tr><td>Obs &amp; Gyn OPD </td><td>B2FG</td><td>tue fri sat </td></tr><tr><td>Maternity WD</td><td>B3F1</td><td></td></tr><tr><td>Civil maternity WD </td><td>B4F1</td><td></td></tr><tr><td>NICU &amp; Labour room</td><td>B2F1</td><td></td></tr><tr><td>Art centre</td><td>B2FG</td><td>daily</td></tr>
                 </tbody>
             </table>
         </div>
@@ -189,7 +199,7 @@
 				<th>Timings</th>
 				</tr></thead>
                 <tbody>
-                    <tr><td>PLASTIC SURG WD</td><td>B1F4</td><td></td></tr><tr><td>BURNS CENTRE</td><td>B1F4</td><td></td></tr><tr><td>GENERAL SURG OPD</td><td>B1F1</td><td>daily</td></tr><tr><td>VASCULAR SURG OPD</td><td>B1F1</td><td>mon fri</td></tr><tr><td>GENERAL SURG OPD</td><td>B1F1</td><td></td></tr><tr><td>GI surg </td><td>B3F6</td><td></td></tr><tr><td>family sug WD </td><td>B3F4</td><td></td></tr><tr><td>vascular surg WD </td><td>B4F3</td><td></td></tr><tr><td>acute surgery  WD</td><td>B7F5</td><td></td></tr><tr><td>neurosurgery WD</td><td>B7F5</td><td></td></tr><tr><td>neurosurgery OPD </td><td>B7F4</td><td>mon fri</td></tr><tr><td>plastic surgery OPD </td><td>B7F4</td><td></td></tr><tr><td>GI surg OPD </td><td>B7F3</td><td>tue thu</td></tr>
+                    <tr><td>Plastic Surg WD</td><td>B1F4</td><td></td></tr><tr><td>Burns Center</td><td>B1F4</td><td></td></tr><tr><td>General Surg OPD</td><td>B1F1</td><td>daily</td></tr><tr><td>Vascular Surg OPD</td><td>B1F1</td><td>mon fri</td></tr><tr><td>General Surg OPD</td><td>B1F1</td><td></td></tr><tr><td>GI Surg </td><td>B3F6</td><td></td></tr><tr><td>Family Surg WD </td><td>B3F4</td><td></td></tr><tr><td>Vascular Surg WD </td><td>B4F3</td><td></td></tr><tr><td>Acute Surgery  WD</td><td>B7F5</td><td></td></tr><tr><td>Neurosurgery WD</td><td>B7F5</td><td></td></tr><tr><td>Neurosurgery OPD </td><td>B7F4</td><td>mon fri</td></tr><tr><td>Plastic Surgery OPD </td><td>B7F4</td><td></td></tr><tr><td>GI Surg OPD </td><td>B7F3</td><td>tue thu</td></tr>
                 </tbody>
             </table>
         </div>
@@ -202,7 +212,7 @@
 				<th>Timings</th>
 				</tr></thead>
                 <tbody>
-                    <tr><td>PAED MED</td><td>B1F2</td><td></td></tr><tr><td>PAED WD 1</td><td>B2F2</td><td></td></tr><tr><td>PICU</td><td>B2F2</td><td></td></tr><tr><td>NICU &amp; labour room</td><td>B2F1</td><td></td></tr><tr><td> Paed med &nbsp;&nbsp;&nbsp;WD 2 </td><td>B3F2</td><td></td></tr><tr><td>Paed surg OPD</td><td>B1F2</td><td>daily</td></tr><tr><td>Paed surg WD 2</td><td>B3F2</td><td>tue wed thu fri</td></tr><tr><td>Paed WD 3</td><td>B4F2</td><td></td></tr><tr><td>Paed onco WD </td><td>B4F2</td><td></td></tr>
+                    <tr><td>Paed MED</td><td>B1F2</td><td></td></tr><tr><td>Paed WD 1</td><td>B2F2</td><td></td></tr><tr><td>PICU</td><td>B2F2</td><td></td></tr><tr><td>NICU &amp; labour room</td><td>B2F1</td><td></td></tr><tr><td> Paed Med WD 2 </td><td>B3F2</td><td></td></tr><tr><td>Paed Surg OPD</td><td>B1F2</td><td>daily</td></tr><tr><td>Paed Surg WD 2</td><td>B3F2</td><td>tue wed thu fri</td></tr><tr><td>Paed WD 3</td><td>B4F2</td><td></td></tr><tr><td>Paed Onco WD </td><td>B4F2</td><td></td></tr>
                 </tbody>
             </table>
         </div>

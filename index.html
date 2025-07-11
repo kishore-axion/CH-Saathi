@@ -32,7 +32,7 @@
         <h2 class="text-center mb-4">CH Saathi</h2>
 		<body> 
 			<!-- <h5 class="text-center mb-1"> For AFMCites by AFMCite </h5> --!>
-			<p class="text-center mb-2">For AFMCites by AFMCite <br> Still in beta ;) </p>
+			<p class="text-center mb-2">For AFMCites by AFMCite <br> Feedback !! </p>
 		</body>
         <form>
             <div class="mb-3">
@@ -47,6 +47,9 @@
                     <option value="Obgy">Obgy</option>
                     <option value="Surgery">Surgery</option>
                     <option value="Paediatrics">Paediatrics</option>
+					<option value="Opthal&ENT">Opthal & ENT</option>
+					<option value="Others">Others</option>
+					<option value="Feedback">Report</option>
                 </select>
             </div>
            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -203,7 +206,7 @@
                 </tbody>
             </table>
         </div>
-        <div id="paediatrics-table" style="display: none;">
+			<div id="paediatrics-table" style="display: none;">
             <table class="table table-striped">
 				<thead>
 				<tr>
@@ -215,9 +218,39 @@
                     <tr><td>Paed MED</td><td>B1F2</td><td></td></tr><tr><td>Paed WD 1</td><td>B2F2</td><td></td></tr><tr><td>PICU</td><td>B2F2</td><td></td></tr><tr><td>NICU &amp; labour room</td><td>B2F1</td><td></td></tr><tr><td> Paed Med WD 2 </td><td>B3F2</td><td></td></tr><tr><td>Paed Surg OPD</td><td>B1F2</td><td>daily</td></tr><tr><td>Paed Surg WD 2</td><td>B3F2</td><td>tue wed thu fri</td></tr><tr><td>Paed WD 3</td><td>B4F2</td><td></td></tr><tr><td>Paed Onco WD </td><td>B4F2</td><td></td></tr>
                 </tbody>
             </table>
+			</div>
+			<div id="opthal-table" style="display: none;">
+            <table class="table table-striped">
+				<thead>
+				<tr>
+				<th>Name of Ward/OPD</th>
+				<th>Location</th>
+				<th>Timings</th>
+				</tr></thead>
+			<tbody>
+				<tr><td>ENT WD </td><td>B5F2</td><td>daily</td></tr><tr><td>ENT OPD </td><td>B7F2</td><td>tue thu sat </td></tr><tr><td>Eye WD 1 &amp; V</td><td>B6F2</td><td>tue thur, sat(officers)</td></tr><tr><td>Eye OPD </td><td>B7F2</td><td></td></tr>
+			</tbody></table>
+			</div>
+			<div id="Others-table" style="display: none;">
+            <table class="table table-striped">
+				<thead>
+				<tr>
+				<th>Name of Ward/OPD</th>
+				<th>Location</th>
+				<th>Timings</th>
+				</tr></thead>
+                <tbody>
+					<tr><td>A&amp;E,MI ROOM,DISPENSARY</td><td>B1FG</td><td></td></tr><tr><td>OT Complex 1- 10</td><td>B3F5, B4F5, B5F5</td><td></td></tr><tr><td>Officer family WD</td><td>B3F2</td><td></td></tr><tr><td>Ortho WD &amp; OPD </td><td>B3FG</td><td></td></tr><tr><td>CSSD</td><td>B4F6</td><td></td></tr><tr><td>ICU</td><td>B3F5</td><td></td></tr><tr><td>JCO WD </td><td>B4F3</td><td></td></tr><tr><td>Family WD </td><td>B4F1</td><td></td></tr><tr><td>isolaton WD </td><td>B5F6</td><td></td></tr><tr><td>Officers WD 1&amp;2</td><td>B5F4</td><td></td></tr><tr><td>Psy WD 1&amp;2</td><td>B5F1, B4F1</td><td></td></tr><tr><td>Psy OPD </td><td>B5FG</td><td></td></tr><tr><td>Nuclear medicine </td><td>B5FG</td><td>mon fri</td></tr><tr><td>Dialysis andRTC</td><td>B6F3</td><td></td></tr><tr><td>Labs</td><td>B6F1</td><td></td></tr><tr><td>Radiology</td><td>B6FG</td><td></td></tr>
+					<tr><td>Administrative  </td><td>B7F1</td><td></td></tr><tr><td>CT and MRI, physiotherapy</td><td>B7FG</td><td></td></tr><tr><td>traige WD</td><td>B8F2</td><td></td>
+				</tr>
+				</tbody>
+            </table> </div>
+			<div id="feedback" style="display: none;">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY0Ar_0wf3iMc0mYEe192iypKIDNBVFd8A9kYMFVQemYVLXg/viewform?embedded=true" width="640" height="995" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
-
+	
+<!--
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -234,7 +267,7 @@
             </div>
         </div>
     </div>
-
+--!>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
         const departmentSelect = document.getElementById('department');
@@ -242,6 +275,10 @@
         const obgyTable = document.getElementById('obgy-table');
         const surgeryTable = document.getElementById('surgery-table');
         const paediatricsTable = document.getElementById('paediatrics-table');
+		const opthalTable = document.getElementById('opthal-table');
+		const othersTable = document.getElementById('Others-table');
+		const feedback = document.getElementById('feedback');
+		
 
         departmentSelect.addEventListener('change', () => {
             const selectedDepartment = departmentSelect.value;
@@ -249,6 +286,9 @@
             obgyTable.style.display = 'none';
             surgeryTable.style.display = 'none';
             paediatricsTable.style.display = 'none';
+			opthalTable.style.display = 'none';
+			othersTable.style.display = 'none';
+			feedback.style.display = 'none';
 
             if (selectedDepartment === 'Medicine') {
                 medicineTable.style.display = 'block';
@@ -258,6 +298,12 @@
                 surgeryTable.style.display = 'block';
             } else if (selectedDepartment === 'Paediatrics') {
                 paediatricsTable.style.display = 'block';
+            } else if (selectedDepartment === 'Opthal&ENT') {
+                opthalTable.style.display = 'block';
+            } else if (selectedDepartment === 'Others') {
+                othersTable.style.display = 'block';
+            } else if (selectedDepartment === 'Feedback') {
+                feedback.style.display = 'block';
             }
         });
     </script>
